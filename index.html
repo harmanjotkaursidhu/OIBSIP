@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OIBSIP Projects | Harmanjot Kaur Sidhu</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #050505;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 950px;
+            text-align: center;
+        }
+
+        .small-title {
+            color: #777;
+            font-size: 11px;
+            letter-spacing: 5px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            color: #999;
+            font-size: 15px;
+            margin-bottom: 50px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: #0b0b0b;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 45px 30px;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #777;
+            background: #111;
+        }
+
+        .number {
+            color: #666;
+            font-size: 11px;
+            letter-spacing: 4px;
+            margin-bottom: 18px;
+        }
+
+        .card h2 {
+            font-size: 27px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #888;
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .view {
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 650px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <p class="small-title">OASIS INFOBYTE INTERNSHIP</p>
+
+    <h1>My Projects</h1>
+
+    <p class="subtitle">
+        Web Development Projects by Harmanjot Kaur Sidhu
+    </p>
+
+    <div class="projects">
+
+        <a href="Task-1-Landing-Page/" class="card">
+            <p class="number">TASK 01</p>
+
+            <h2>Sim & Sip</h2>
+
+            <p>
+                A modern and responsive landing page created using
+                HTML and CSS.
+            </p>
+
+            <span class="view">VIEW PROJECT →</span>
+        </a>
+
+
+        <a href="Task-2-Portfolio/" class="card">
+            <p class="number">TASK 02</p>
+
+            <h2>Personal Portfolio</h2>
+
+            <p>
+                A responsive personal portfolio showcasing my skills,
+                projects and web development work.
+            </p>
+
+            <span class="view">VIEW PROJECT →</span>
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
