@@ -28,7 +28,7 @@
 
         .container {
             width: 100%;
-            max-width: 1100px;
+            max-width: 1200px;
             text-align: center;
         }
 
@@ -61,8 +61,10 @@
             border: 1px solid #222;
             border-radius: 12px;
             padding: 45px 30px;
+
             text-decoration: none;
             color: white;
+
             transition: 0.3s ease;
         }
 
@@ -73,7 +75,7 @@
         }
 
         .number {
-            color: #666;
+            color: #777;
             font-size: 11px;
             letter-spacing: 4px;
             margin-bottom: 18px;
@@ -94,21 +96,36 @@
         .view {
             font-size: 12px;
             letter-spacing: 2px;
+            color: white;
         }
 
         @media (max-width: 900px) {
+
             .projects {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
 
         @media (max-width: 650px) {
+
+            body {
+                padding: 30px 15px;
+            }
+
             h1 {
                 font-size: 36px;
             }
 
+            .subtitle {
+                margin-bottom: 35px;
+            }
+
             .projects {
                 grid-template-columns: 1fr;
+            }
+
+            .card {
+                padding: 35px 25px;
             }
         }
     </style>
@@ -116,77 +133,95 @@
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <p class="small-title">OASIS INFOBYTE INTERNSHIP</p>
+        <p class="small-title">
+            OASIS INFOBYTE INTERNSHIP
+        </p>
 
-    <h1>My Projects</h1>
+        <h1>My Projects</h1>
 
-    <p class="subtitle">
-        Web Development Projects by Harmanjot Kaur Sidhu
-    </p>
-
-    <div class="projects">
-
-        <!-- TASK 01 -->
-        <a href="Task-1-Landing-Page/" class="card">
-
-            <p class="number">TASK 01</p>
-
-            <h2>Sim & Sip</h2>
-
-            <p>
-                A modern and responsive landing page created using
-                HTML and CSS.
-            </p>
-
-            <span class="view">
-                VIEW PROJECT →
-            </span>
-
-        </a>
+        <p class="subtitle">
+            Web Development Projects by Harmanjot Kaur Sidhu
+        </p>
 
 
-        <!-- TASK 02 -->
-        <a href="Task-2-Portfolio/" class="card">
+        <div class="projects">
 
-            <p class="number">TASK 02</p>
+            <!-- TASK 01 -->
 
-            <h2>Personal Portfolio</h2>
+            <a href="Task-1-Landing-Page/" class="card">
 
-            <p>
-                A responsive personal portfolio showcasing my skills,
-                projects and web development work.
-            </p>
+                <p class="number">
+                    TASK 01
+                </p>
 
-            <span class="view">
-                VIEW PROJECT →
-            </span>
+                <h2>
+                    Sim & Sip
+                </h2>
 
-        </a>
+                <p>
+                    A modern and responsive landing page created using
+                    HTML and CSS.
+                </p>
+
+                <span class="view">
+                    VIEW PROJECT →
+                </span>
+
+            </a>
 
 
-        <!-- TASK 03 -->
-        <a href="Task-3-Temperature-Converter/" class="card">
+            <!-- TASK 02 -->
 
-            <p class="number">TASK 03</p>
+            <a href="Task-2-Portfolio/" class="card">
 
-            <h2>Temperature Converter</h2>
+                <p class="number">
+                    TASK 02
+                </p>
 
-            <p>
-                An interactive temperature converter that converts
-                values between Celsius, Fahrenheit and Kelvin.
-            </p>
+                <h2>
+                    Personal Portfolio
+                </h2>
 
-            <span class="view">
-                VIEW PROJECT →
-            </span>
+                <p>
+                    A responsive personal portfolio showcasing my skills,
+                    projects and web development work.
+                </p>
 
-        </a>
+                <span class="view">
+                    VIEW PROJECT →
+                </span>
+
+            </a>
+
+
+            <!-- TASK 03 -->
+
+            <a href="Task-3/" class="card">
+
+                <p class="number">
+                    TASK 03
+                </p>
+
+                <h2>
+                    Temperature Converter
+                </h2>
+
+                <p>
+                    An interactive temperature converter that converts
+                    values between Celsius, Fahrenheit and Kelvin.
+                </p>
+
+                <span class="view">
+                    VIEW PROJECT →
+                </span>
+
+            </a>
+
+        </div>
 
     </div>
-
-</div>
 
 </body>
 </html>
