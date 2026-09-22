@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>OIBSIP Projects | Harmanjot Kaur Sidhu</title>
 
     <style>
@@ -27,7 +28,7 @@
 
         .container {
             width: 100%;
-            max-width: 950px;
+            max-width: 1100px;
             text-align: center;
         }
 
@@ -51,7 +52,7 @@
 
         .projects {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 25px;
         }
 
@@ -95,6 +96,12 @@
             letter-spacing: 2px;
         }
 
+        @media (max-width: 900px) {
+            .projects {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
         @media (max-width: 650px) {
             h1 {
                 font-size: 36px;
@@ -121,7 +128,9 @@
 
     <div class="projects">
 
+        <!-- TASK 01 -->
         <a href="Task-1-Landing-Page/" class="card">
+
             <p class="number">TASK 01</p>
 
             <h2>Sim & Sip</h2>
@@ -131,11 +140,16 @@
                 HTML and CSS.
             </p>
 
-            <span class="view">VIEW PROJECT →</span>
+            <span class="view">
+                VIEW PROJECT →
+            </span>
+
         </a>
 
 
+        <!-- TASK 02 -->
         <a href="Task-2-Portfolio/" class="card">
+
             <p class="number">TASK 02</p>
 
             <h2>Personal Portfolio</h2>
@@ -145,7 +159,29 @@
                 projects and web development work.
             </p>
 
-            <span class="view">VIEW PROJECT →</span>
+            <span class="view">
+                VIEW PROJECT →
+            </span>
+
+        </a>
+
+
+        <!-- TASK 03 -->
+        <a href="Task-3-Temperature-Converter/" class="card">
+
+            <p class="number">TASK 03</p>
+
+            <h2>Temperature Converter</h2>
+
+            <p>
+                An interactive temperature converter that converts
+                values between Celsius, Fahrenheit and Kelvin.
+            </p>
+
+            <span class="view">
+                VIEW PROJECT →
+            </span>
+
         </a>
 
     </div>
